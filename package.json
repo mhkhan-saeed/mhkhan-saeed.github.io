@@ -1,0 +1,16 @@
+{
+  "name": "mhkhan-website",
+  "version": "1.0.0",
+  "description": "Personal website of Mahmudul Hasan Khan",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.7",
+    "js-yaml": "^4.3.2",
+    "markdown-it": "^14.3.3"
+  },
+  "private": true,
+  "type": "module"
+}
