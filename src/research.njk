@@ -1,0 +1,71 @@
+---
+layout: layouts/base.njk
+permalink: research.html
+title: Research
+description: Molybdenum oxide catalysts for converting lignin- and fermentation-derived oxygenates into aromatics and olefins at ambient hydrogen pressure.
+---
+<div class="wrap page">
+  <header class="page-head">
+    <p class="eyebrow">Research</p>
+    <h1>Drop-in aromatics and olefins from biomass, over molybdenum oxide</h1>
+    <p class="lead">Lignin vapors and some fermentation byproducts are rich in exactly the ring structures and C=C bonds the chemical industry wants, but they carry too much oxygen. My Ph.D. work uses hydrodeoxygenation (HDO) over molybdenum oxide to remove that oxygen at ambient hydrogen pressure, without sulfur or noble metals, and asks what it takes to make the chemistry work on real feeds.</p>
+  </header>
+
+  <section class="split" aria-labelledby="r-picture">
+    <div class="prose">
+      <h2 id="r-picture">The big picture</h2>
+      <p>Biomass is broken down into lignin-derived vapors or fermented into small aromatic molecules. A packed bed of molybdenum oxide then removes the oxygen and leaves aromatics such as benzene, toluene and xylenes, plus light olefins. Those products are the same molecules a refinery or cracker already makes, so they can feed existing petrochemical plants and the products made from them.</p>
+      <p>Getting there needs three things: kinetics that hold for mixed feeds, a catalyst that lasts, and a product slate that pays. Each of my projects tackles one of them.</p>
+    </div>
+    <figure class="plate">
+      <img src="assets/img/figures/lignin-upgrading-overview.jpg" alt="Concept: biomass and its lignin are converted in a MoO3 packed-bed reactor into aromatics, which go through existing petrochemical infrastructure into everyday petrochemical products." loading="lazy">
+      <figcaption>Catalytic upgrading of lignin into aromatics for existing petrochemical infrastructure. From my CBE Perfect Pitch slide, 2026.</figcaption>
+    </figure>
+  </section>
+
+  <section class="split split-rev" aria-labelledby="r-why">
+    <div class="prose">
+      <h2 id="r-why">Why molybdenum oxide</h2>
+      <p>Conventional hydrodeoxygenation uses sulfided molybdenum or noble metals (Ru, Re, Pd, Pt) under hydrogen pressure. They remove oxygen well, but they also hydrogenate the aromatic rings, which destroys the most valuable part of the molecule and consumes hydrogen.</p>
+      <p>Bulk MoO<sub>3</sub> works at about 1 bar of hydrogen. It removes oxygen through surface oxygen vacancies (a reverse Mars–van Krevelen mechanism), cleaving the C–O bond while leaving the ring and C=C bonds intact. That makes it attractive for producing aromatics and olefins, and raises practical questions about mixed feeds, selectivity and catalyst lifetime that my work addresses.</p>
+    </div>
+    <figure class="plate">
+      <img src="assets/img/figures/why-moo3.png" alt="Concept: phenolic compounds over sulfide or noble-metal catalysts at 1 to 80 bar hydrogen become saturated rings, while over bulk MoO3 at 1 bar hydrogen and 320 °C they become aromatic hydrocarbons." loading="lazy">
+      <figcaption>Ring saturation over conventional catalysts versus selective deoxygenation over bulk MoO<sub>3</sub>. <span class="credit">Concept after Prasomsri et al., <em>Energy Environ. Sci.</em> 2014.</span></figcaption>
+    </figure>
+  </section>
+
+  <section class="r-projects" aria-labelledby="r-projects">
+    <h2 id="r-projects">Projects</h2>
+    <ul class="project-list">
+      {%- for p in collections.projects %}
+      <li class="project-card">
+        <a href="{{ p.data.permalink }}">
+          {%- if p.data.thumb or p.data.image %}<span class="project-thumb"><img src="{{ p.data.thumb or p.data.image }}" alt="" loading="lazy"></span>{% endif %}
+          <span class="project-card-body">
+            <span class="status status-{{ p.data.status_kind or 'progress' }}">{{ p.data.status }}</span>
+            <span class="card-title">{{ p.data.title | safe }}</span>
+            {%- if p.data.reaction %}<span class="reaction reaction-sm">{{ p.data.reaction | safe }}</span>{% endif %}
+            <span class="card-text">{{ p.data.summary | safe }}</span>
+          </span>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <section class="split" aria-labelledby="r-how">
+    <div class="prose">
+      <h2 id="r-how">How I work</h2>
+      <p>Most of my experiments run in gas-phase packed-bed microreactors that I set up and operate: liquid oxygenates are fed by syringe pump into hydrogen, vaporized in a heated pre-heater, passed over a small bed of catalyst, and analyzed online by gas chromatography.</p>
+      <p>Before trusting a rate, I check for internal and external mass-transfer limits so the numbers reflect surface chemistry. I then pair the kinetics with characterization of fresh and spent catalysts to connect what the rates show to what has changed on the catalyst.</p>
+      <ul class="chips">
+        <li>Packed-bed kinetics</li><li>Rate laws and mechanism</li><li>Online GC / GC-MS</li><li>TPR · TPD · pulse titration</li><li>BET</li><li>XRD</li><li>XPS</li><li>Raman · FTIR</li><li>SEM · TEM</li><li>Python · JMP · DoE</li>
+      </ul>
+    </div>
+    <figure class="plate">
+      <img src="assets/img/figures/packed-bed-reactor-setup.png" alt="Schematic of the packed-bed microreactor: hydrogen and nitrogen with syringe-fed oxygenates pass through a pre-heater into a MoO3 catalyst bed packed with glass beads and glass wool, then through a heated transfer line to an online gas chromatograph." loading="lazy">
+      <figcaption>The packed-bed microreactor and online GC used across my projects.</figcaption>
+    </figure>
+  </section>
+</div>

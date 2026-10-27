@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+permalink: publications.html
+title: Publications
+description: Journal articles, manuscripts in preparation, talks and posters by Mahmudul Hasan Khan.
+---
+{%- from "macros.njk" import paper, authorList %}
+<div class="wrap page">
+  <header class="page-head">
+    <p class="eyebrow">Publications</p>
+    <h1>Papers, talks and posters</h1>
+    <p class="lead">The summaries are my own short descriptions; follow the links for the full articles. {% for l in site.links %}{% if l.label == "Google Scholar" %}An up-to-date list is on <a href="{{ l.url }}" target="_blank" rel="noopener">Google Scholar</a>.{% endif %}{% endfor %}</p>
+  </header>
+
+  <section class="pub-section" aria-labelledby="pubs-journal">
+    <h2 id="pubs-journal">Journal articles</h2>
+    <ul class="pubs">{% for p in publications.papers %}{{ paper(p, publications.me) }}{% endfor %}</ul>
+  </section>
+
+  {%- if publications.in_preparation %}
+  <section class="pub-section" aria-labelledby="pubs-prep">
+    <h2 id="pubs-prep">Manuscripts in preparation</h2>
+    <ul class="pubs">
+      {%- for p in publications.in_preparation %}
+      <li class="pub"><div class="pub-year">In prep.</div><div class="pub-body"><p class="pub-title">{{ p.title | safe }}</p><p class="pub-authors">{{ authorList(p.authors, publications.me) }}</p>{% if p.project %}<p class="pub-links"><a href="{{ p.project }}">About this project</a></p>{% endif %}</div></li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+
+  {%- for group in [["Oral presentations", publications.talks, "pubs-talks"], ["Posters", publications.posters, "pubs-posters"]] %}{% if group[1] %}
+  <section class="pub-section" aria-labelledby="{{ group[2] }}">
+    <h2 id="{{ group[2] }}">{{ group[0] }}</h2>
+    <ul class="pubs">
+      {%- for t in group[1] %}
+      <li class="pub"><div class="pub-year">{{ t.year }}</div><div class="pub-body"><p class="pub-title">{{ t.title | safe }}</p><p class="pub-authors">{{ authorList(t.authors, publications.me) }}</p><p class="pub-venue">{{ t.venue }}</p></div></li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}{% endfor %}
+</div>

@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+permalink: news.html
+title: News
+description: Awards, papers, conferences and milestones from Mahmudul Hasan Khan.
+---
+{%- from "macros.njk" import newsItem %}
+<div class="wrap page">
+  <header class="page-head">
+    <p class="eyebrow">News &amp; highlights</p>
+    <h1>What’s new</h1>
+    <p class="lead">Awards, papers, conference talks and milestones, newest first.</p>
+  </header>
+  <ul class="news news-full">
+    {%- for n in news | newestFirst %}{{ newsItem(n) }}{% endfor %}
+  </ul>
+</div>
