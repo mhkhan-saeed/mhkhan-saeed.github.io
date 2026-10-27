@@ -1,0 +1,16 @@
+# ---------------------------------------------------------------
+# THE HOME PAGE is built from these sections, top to bottom.
+# Reorder the lines to reorder the sections.
+# Put a # in front of a line to hide that section.
+# Available: intro, research, news, publications, contact
+# ---------------------------------------------------------------
+
+sections:
+  - intro
+  - research
+  - news
+  - publications
+  - contact
+
+# How many news items to show on the home page.
+news_count: 4

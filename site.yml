@@ -1,0 +1,36 @@
+# ---------------------------------------------------------------
+# YOUR DETAILS. Change anything here and it updates on every page.
+# ---------------------------------------------------------------
+
+name: Mahmudul Hasan Khan
+short_name: M. H. Khan
+title: Ph.D. Candidate, Chemical Engineering
+affiliation: Iowa State University
+advisor: Prof. Brent H. Shanks
+location: Ames, Iowa
+
+# One sentence that appears under your name on the home page.
+headline: I design and diagnose molybdenum oxide catalysts that turn biomass-derived molecules into drop-in aromatics and olefins at ambient hydrogen pressure.
+
+# The "what I'm looking for" line on the home page. Leave blank ("") to hide it.
+seeking: Seeking full-time roles in catalysis R&D, reaction engineering and process development from mid-2027.
+
+email: mhkhansaeed@gmail.com
+phone: 515-815-4084            # Delete this line to remove your phone number from the site.
+
+# Profile links. Delete a line to hide that button; add ORCID or ResearchGate the same way.
+links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/mahmudul-hasan-khan-che
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?hl=en&user=d7sEsZ4AAAAJ
+
+# The CV file people download. Replace the PDF in src/assets/files/ to update it.
+cv_file: assets/files/Khan_CV.pdf
+cv_updated: October 2026
+
+# Photo used on the home and About pages.
+photo: assets/img/headshot-800.jpg
+
+# Text search engines and link previews (LinkedIn, Slack) show for the site.
+description: Mahmudul Hasan Khan, Ph.D. candidate in chemical engineering at Iowa State University. Heterogeneous catalysis, reaction kinetics, catalyst deactivation and bio-based aromatics.

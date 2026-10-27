@@ -1,0 +1,77 @@
+# ---------------------------------------------------------------
+# CV PAGE. Each list is one section of the CV page, in this order.
+# To remove a whole section, delete it (from its heading line down).
+# The downloadable PDF is separate: replace src/assets/files/Khan_CV.pdf.
+# ---------------------------------------------------------------
+
+education:
+  - years: 2027 (expected)
+    what: Ph.D., Chemical Engineering
+    where: Iowa State University, Ames, Iowa
+    note: "Advisor: Prof. Brent H. Shanks"
+  - years: "2025"
+    what: M.Eng., Chemical Engineering
+    where: Iowa State University, Ames, Iowa
+    note: "GPA 3.96 / 4.00"
+  - years: "2021"
+    what: B.Sc., Chemical Engineering
+    where: Bangladesh University of Engineering and Technology (BUET), Dhaka
+    note: "GPA 3.62 / 4.00"
+
+experience:
+  - years: 2022–present
+    what: Graduate Research Assistant
+    where: Dept. of Chemical and Biological Engineering, Iowa State University
+    points:
+      - Kinetic and mechanistic studies of hydrodeoxygenation in mixed lignin-derived feeds over MoO<sub>3</sub>; developed a kinetic approach to rank competitive adsorption.
+      - Synthesized and characterized 15+ supported molybdenum oxide catalysts to relate support properties to activity and selectivity.
+      - Diagnosed catalyst deactivation by pairing long-run kinetics with surface and bulk characterization; developed regeneration and pretreatment protocols.
+      - Screened 10+ MoO<sub>3</sub>-based catalysts for converting bio-derived 3-methylanisole to BTX, and proposed an integrated industrial process.
+  - years: 2023
+    what: Teaching Assistant
+    where: Iowa State University
+    points:
+      - "CH E 4260, Chemical Engineering Laboratory II: instructed mass transfer and staged-operations experiments for 24 students."
+      - "CH E 4060, Environmental Chemodynamics: weekly help sessions, homework solutions and grading for 30 students."
+  - years: 2021–2022
+    what: Health, Safety and Environment Intern
+    where: Chevron Bangladesh Business Unit, Dhaka
+    points:
+      - Reviewed internal safety audits and recommended 10+ corrective actions.
+      - Updated the regulatory compliance workbook and wrote monthly “Safety Moment” briefings.
+  - years: 2021
+    what: Research Assistant
+    where: Institute of Water and Flood Management, BUET
+    points:
+      - Assessed 100+ water and 20+ soil samples across two transboundary river basins; co-authored a policy-oriented report proposing a national water-quality monitoring framework.
+  - years: 2019–2021
+    what: Undergraduate Research Assistant
+    where: Dept. of Chemical Engineering, BUET
+    points:
+      - Turned coconut husk into Ni-activated biochar by pyrolysis and tested it as an adsorbent for dye removal from wastewater.
+
+skills:
+  - area: Catalysis & reaction engineering
+    items: Reaction kinetics and mechanism development · packed-bed reactor design and operation · deactivation diagnosis and stabilization · mass-transfer checks (Mears, Weisz–Prater) · structure–activity–selectivity relationships · supported metal-oxide synthesis (incipient wetness, wet impregnation) and screening
+  - area: Characterization
+    items: GC, GC-MS · chemisorption (TPR, TPD, pulse titration) · BET physisorption · XRD · XPS · Raman · FTIR · SEM, TEM · ICP-OES
+  - area: Data & statistics
+    items: Python (NumPy, SciPy, Pandas) · MATLAB · JMP · R · Excel · OriginPro · Power BI · CasaXPS · Design of Experiments (full/fractional factorial) · Statistical Process Control · root-cause analysis
+
+awards:
+  - years: 2026
+    what: CBE Perfect Pitch Award, second place
+    where: Dept. of Chemical and Biological Engineering, Iowa State University
+  - years: 2025–2026
+    what: Lead author, Sun Grant Program proposal (USDA–NIFA, North Central Region)
+    where: "Proposal on MoO<sub>3</sub> deactivation, with Prof. Brent Shanks as PI. Not selected for funding."
+  - years: 2022
+    what: George W. Parrott Centennial Graduate Fellowship
+    where: Iowa State University
+  - years: 2022
+    what: CBE Excellence Fellowship
+    where: Dept. of Chemical and Biological Engineering, Iowa State University
+
+service:
+  - Vice President (2024–25) and Professional Development Chair (2023–24), Chemical Engineering Graduate Student Organization, Iowa State
+  - "Member: NSF Engineering Research Center for Biorenewable Chemicals (CBiRC) · AIChE · Great Plains Catalysis Society · Tau Beta Pi, Iowa Alpha"

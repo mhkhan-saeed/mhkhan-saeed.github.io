@@ -1,0 +1,12 @@
+{%- from "macros.njk" import newsItem %}
+<section aria-labelledby="home-news">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="home-news">News</h2>
+      <a class="more" href="news.html">All news</a>
+    </div>
+    <ul class="news">
+      {%- for n in (news | newestFirst).slice(0, home.news_count or 4) %}{{ newsItem(n) }}{% endfor %}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,46 @@
+---
+layout: layouts/base.njk
+permalink: cv.html
+title: CV
+description: Education, research and industry experience, skills and awards of Mahmudul Hasan Khan.
+---
+<div class="wrap page">
+  <header class="page-head page-head-row">
+    <div>
+      <p class="eyebrow">Curriculum vitae</p>
+      <h1>CV</h1>
+      <p class="lead">The highlights are below. The full CV is a three-page PDF, updated {{ site.cv_updated }}.</p>
+    </div>
+    <a class="btn btn-primary" href="{{ site.cv_file }}">Download CV (PDF)</a>
+  </header>
+
+  {%- macro timeline(items) %}
+  <ol class="timeline">
+    {%- for e in items %}
+    <li>
+      <p class="tl-years">{{ e.years }}</p>
+      <div class="tl-body">
+        <p class="tl-what">{{ e.what | safe }}</p>
+        {%- if e.where %}<p class="tl-where">{{ e.where | safe }}</p>{% endif %}
+        {%- if e.note %}<p class="tl-note">{{ e.note | safe }}</p>{% endif %}
+        {%- if e.points %}<ul class="tl-points">{% for pt in e.points %}<li>{{ pt | safe }}</li>{% endfor %}</ul>{% endif %}
+      </div>
+    </li>
+    {%- endfor %}
+  </ol>
+  {%- endmacro %}
+
+  {%- if cv.education %}<section class="cv-section" aria-labelledby="cv-edu"><h2 id="cv-edu">Education</h2>{{ timeline(cv.education) }}</section>{% endif %}
+  {%- if cv.experience %}<section class="cv-section" aria-labelledby="cv-exp"><h2 id="cv-exp">Experience</h2>{{ timeline(cv.experience) }}</section>{% endif %}
+  {%- if cv.skills %}
+  <section class="cv-section" aria-labelledby="cv-skills"><h2 id="cv-skills">Technical skills</h2>
+    <dl class="skills">{% for s in cv.skills %}<div><dt>{{ s.area }}</dt><dd>{{ s.items | safe }}</dd></div>{% endfor %}</dl>
+  </section>
+  {%- endif %}
+  {%- if cv.awards %}<section class="cv-section" aria-labelledby="cv-awards"><h2 id="cv-awards">Awards, fellowships and proposals</h2>{{ timeline(cv.awards) }}</section>{% endif %}
+  {%- if cv.service %}
+  <section class="cv-section" aria-labelledby="cv-service"><h2 id="cv-service">Leadership and memberships</h2>
+    <ul class="plain-list">{% for s in cv.service %}<li>{{ s | safe }}</li>{% endfor %}</ul>
+  </section>
+  {%- endif %}
+</div>

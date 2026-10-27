@@ -1,0 +1,19 @@
+<section class="hero" aria-labelledby="hero-name">
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      {%- if site.seeking %}<p class="eyebrow eyebrow-accent">{{ site.seeking }}</p>{% endif %}
+      <h1 id="hero-name" class="hero-name">{{ site.name }}</h1>
+      <p class="hero-role">{{ site.title }}, {{ site.affiliation }}</p>
+      <p class="hero-headline">{{ site.headline }}</p>
+      <ul class="actions">
+        <li><a class="btn btn-primary" href="mailto:{{ site.email }}">Email me</a></li>
+        <li><a class="btn" href="{{ site.cv_file }}">Download CV</a></li>
+        {%- for l in site.links %}<li><a class="btn" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a></li>{% endfor %}
+      </ul>
+      <p class="hero-contact">{{ site.email }}{% if site.phone %} · {{ site.phone }}{% endif %} · {{ site.location }}</p>
+    </div>
+    <figure class="hero-photo">
+      <img src="{{ site.photo }}" alt="Portrait of {{ site.name }}" width="800" height="800">
+    </figure>
+  </div>
+</section>

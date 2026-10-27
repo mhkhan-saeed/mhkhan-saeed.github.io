@@ -1,0 +1,12 @@
+{%- from "macros.njk" import paper %}
+<section class="band" aria-labelledby="home-pubs">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="home-pubs">Publications</h2>
+      <a class="more" href="publications.html">All publications and talks</a>
+    </div>
+    <ul class="pubs">
+      {%- for p in publications.papers %}{{ paper(p, publications.me, true) }}{% endfor %}
+    </ul>
+  </div>
+</section>

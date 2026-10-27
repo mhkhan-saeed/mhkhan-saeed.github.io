@@ -1,0 +1,21 @@
+<section class="band" aria-labelledby="home-research">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="home-research">Research</h2>
+      <a class="more" href="research.html">Research overview</a>
+    </div>
+    <p class="section-lead">Lignin and biorefinery byproducts carry too much oxygen to go into a refinery. I study how molybdenum oxide strips that oxygen at ambient hydrogen pressure while keeping the C=C bonds and aromatic rings that make the products valuable, and what it takes to run that chemistry on real, mixed feeds for long enough to matter.</p>
+    <ul class="cards">
+      {%- for p in collections.projects %}{% if not p.data.home_hidden %}
+      <li class="card">
+        <a href="{{ p.data.permalink }}">
+          <span class="status status-{{ p.data.status_kind or 'progress' }}">{{ p.data.status }}</span>
+          <span class="card-title">{{ p.data.short_title or p.data.title | safe }}</span>
+          {%- if p.data.reaction %}<span class="reaction reaction-sm">{{ p.data.reaction | safe }}</span>{% endif %}
+          <span class="card-text">{{ p.data.summary | safe }}</span>
+        </a>
+      </li>
+      {%- endif %}{% endfor %}
+    </ul>
+  </div>
+</section>

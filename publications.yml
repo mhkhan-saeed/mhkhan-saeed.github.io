@@ -1,0 +1,84 @@
+# ---------------------------------------------------------------
+# PUBLICATIONS AND PRESENTATIONS
+#
+# To add a paper, copy one block under "papers:" and edit it.
+# "me" marks how your name is shown in bold.
+# "summary" is your own two-line description (never paste the abstract).
+# "free_pdf" is only for open-access papers; leave it out otherwise.
+# ---------------------------------------------------------------
+
+me: Khan, M. H.
+
+papers:
+  - authors: Khan, M. H.; Fard, Z. H.; Kohler, A. J.; Roling, L. T.; Shanks, B. H.
+    title: Elucidating the Competitive Hydrodeoxygenation of Lignin-Derived Oxygenates over Bulk MoO<sub>3</sub> Catalyst through Kinetic Analysis
+    journal: ACS Catalysis
+    details: 2025, 15 (17), 15488–15501
+    year: 2025
+    doi: 10.1021/acscatal.5c04264
+    open_access: true
+    role: First author
+    project: research-competitive-hdo.html
+    summary: Measures how mixed lignin-derived oxygenates compete for the same active sites on MoO<sub>3</sub>, and introduces a kinetic route to rank how strongly each one adsorbs.
+
+  - authors: Kohler, A. J.; Khan, M. H.; Shanks, B. H.
+    title: Identification of Sabatier Descriptors for Hydrodeoxygenation Activity and Selectivity on Supported Molybdenum Oxide Catalysts
+    journal: ACS Catalysis
+    details: 2025, 15 (5), 4317–4330
+    year: 2025
+    doi: 10.1021/acscatal.4c07504
+    role: Co-author · catalyst synthesis, characterization and data interpretation
+    project: research-sabatier-descriptors.html
+    summary: Links properties of the oxide support to the activity and product selectivity of supported molybdenum oxide catalysts.
+
+  - authors: Sporsho, S. S.; Saha, D.; Khan, M. H.; Rahman, M. S.; Rukh, M.; Islam, M. R.; Chakma, T.; Haque, F.; Roy, H.; Sarkar, D.; Islam, M. S.
+    title: Insights into adsorbent-based pharmaceutical wastewater treatment and future developments toward sustainability
+    journal: RSC Advances
+    details: 2025, 15 (59), 50597–50632
+    year: 2025
+    doi: 10.1039/d5ra06445g
+    open_access: true
+    role: Co-author · review
+    summary: Surveys adsorbent materials for removing pharmaceutical residues from wastewater and where sustainable treatment should head next.
+
+  - authors: Khan, M. H.; Akash, N. M.; Akter, S.; Rukh, M.; Nzediegwu, C.; Islam, M. S.
+    title: A comprehensive review of coconut-based porous materials for wastewater treatment and CO<sub>2</sub> capture
+    journal: Journal of Environmental Management
+    details: 2023, 338, 117825
+    year: 2023
+    doi: 10.1016/j.jenvman.2023.117825
+    role: First author · review
+    project: research-earlier-work.html
+    summary: Reviews how coconut biomass is turned into porous carbons and how those materials perform for water treatment and CO<sub>2</sub> capture.
+
+in_preparation:
+  - authors: Khan, M. H.; Niu, M.; Fretag, C.; Huang, W.; Shanks, B. H.
+    title: Investigation of the Complex Phenomenon of Molybdenum Oxide (MoO<sub>3</sub>) Catalyst Deactivation during Anisole Hydrodeoxygenation
+    project: research-catalyst-deactivation.html
+  - authors: Khan, M. H.; Shanks, B. H.
+    title: Selective Conversion of Bio-derived 3-Methylanisole via Hydrodeoxygenation
+    project: research-3-methylanisole-to-btx.html
+
+talks:
+  - authors: Khan, M. H.; Kohler, A. J.; Fard, Z. H.; Roling, L. T.; Shanks, B. H.
+    title: Kinetic Analysis of Competitive Hydrodeoxygenation of Lignin-derived Molecules over Bulk MoO<sub>3</sub> Catalyst
+    venue: AIChE Annual Meeting
+    year: 2024
+  - authors: Khan, M. H.; Kohler, A. J.; Fard, Z. H.; Roling, L. T.; Shanks, B. H.
+    title: Kinetic Analysis of Competitive Hydrodeoxygenation of Lignin-derived Molecules over Bulk MoO<sub>3</sub>
+    venue: Great Plains Catalysis Society Symposium
+    year: 2024
+
+posters:
+  - authors: Khan, M. H.; Shanks, B. H.
+    title: Elucidating Molybdenum Trioxide (MoO<sub>3</sub>) Deactivation during the Ambient Pressure Hydrogenation of Lignin-Derived Model Compounds
+    venue: 29th North American Catalysis Society Meeting
+    year: 2025
+  - authors: Khan, M. H.; Shanks, B. H.
+    title: Understanding MoO<sub>3</sub> Catalyst Deactivation during the Hydrodeoxygenation of Lignin-derived Oxygenates
+    venue: Great Plains Catalysis Society Symposium
+    year: 2025
+  - authors: Khan, M. H.; Kohler, A. J.; Shanks, B. H.
+    title: Kinetic Analysis of Competitive Hydrodeoxygenation of Lignin-derived Molecules over Bulk MoO<sub>3</sub> Catalyst
+    venue: Great Plains Catalysis Society Symposium
+    year: 2023

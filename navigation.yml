@@ -1,0 +1,19 @@
+# ---------------------------------------------------------------
+# THE MENU at the top of every page, in this order.
+# To remove a page from the menu, delete its two lines.
+# To add a page: create src/yourpage.md (copy about.md as a start),
+# give it "permalink: yourpage.html", then add it here.
+# ---------------------------------------------------------------
+
+- title: Home
+  url: index.html
+- title: About
+  url: about.html
+- title: Research
+  url: research.html
+- title: Publications
+  url: publications.html
+- title: News
+  url: news.html
+- title: CV
+  url: cv.html

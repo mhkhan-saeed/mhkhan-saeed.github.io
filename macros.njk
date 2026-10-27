@@ -1,0 +1,34 @@
+{# Reusable pieces. You should not need to edit this file. #}
+
+{% macro authorList(authors, me) -%}
+{{ authors | replace(me, '<strong>' + me + '</strong>') | safe }}
+{%- endmacro %}
+
+{% macro newsItem(n) -%}
+<li class="news-item">
+  <div class="news-meta">
+    <time>{{ n.date | newsDate }}</time>
+    {%- if n.type %}<span class="news-type">{{ n.type }}</span>{% endif %}
+  </div>
+  <div class="news-body">
+    <h3 class="news-title">{% if n.link %}<a href="{{ n.link }}" target="_blank" rel="noopener">{{ n.title | safe }}</a>{% else %}{{ n.title | safe }}{% endif %}</h3>
+    {%- if n.text %}<p>{{ n.text | md | safe }}</p>{% endif %}
+  </div>
+</li>
+{%- endmacro %}
+
+{% macro paper(p, me, compact=false) -%}
+<li class="pub">
+  <div class="pub-year">{{ p.year }}</div>
+  <div class="pub-body">
+    <p class="pub-title">{{ p.title | safe }}</p>
+    <p class="pub-authors">{{ authorList(p.authors, me) }}</p>
+    <p class="pub-venue"><em>{{ p.journal }}</em> {{ p.details }}{% if p.role %} <span class="pub-role">{{ p.role }}</span>{% endif %}</p>
+    {%- if not compact and p.summary %}<p class="pub-summary">{{ p.summary | safe }}</p>{% endif %}
+    <p class="pub-links">
+      <a href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">{% if p.open_access %}Read free (open access){% else %}Journal page{% endif %}</a>
+      {%- if p.project %} <a href="{{ p.project }}">About this project</a>{% endif %}
+    </p>
+  </div>
+</li>
+{%- endmacro %}

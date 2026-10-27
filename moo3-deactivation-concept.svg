@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" role="img" aria-labelledby="t d" font-family="Helvetica Neue, Arial, sans-serif">
+  <title id="t">Life cycle of a MoO3 hydrodeoxygenation catalyst</title>
+  <desc id="d">Bulk MoO3 is reduced in hydrogen to an active surface with oxygen vacancies and Mo5+ sites, which runs the HDO cycle. Over time on stream the catalyst deactivates by over-reduction to MoO2, by carbon uptake into an oxycarbohydride phase, and by coke. Air calcination returns it to MoO3.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2B2D31"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#A6192E"/></marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2F6B4F"/></marker>
+  </defs>
+  <rect width="960" height="470" fill="#FFFFFF"/>
+
+  <!-- Bulk MoO3 -->
+  <rect x="30" y="50" width="220" height="96" rx="6" fill="#F3F2F0" stroke="#9A9EA6" stroke-width="1.5"/>
+  <text x="140" y="90" text-anchor="middle" font-size="21" font-weight="700" fill="#1A1B1E">Bulk MoO<tspan font-size="14" dy="5">3</tspan></text>
+  <text x="140" y="120" text-anchor="middle" font-size="15" fill="#44474D">fully oxidized, Mo<tspan font-size="11" dy="-7">6+</tspan></text>
+
+  <!-- reduction arrow -->
+  <line x1="252" y1="98" x2="338" y2="98" stroke="#2B2D31" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="295" y="84" text-anchor="middle" font-size="14" fill="#44474D">reduce</text>
+  <text x="295" y="120" text-anchor="middle" font-size="14" fill="#44474D">in H<tspan font-size="10" dy="4">2</tspan></text>
+
+  <!-- Active catalyst -->
+  <rect x="342" y="40" width="270" height="116" rx="6" fill="#FBEFF1" stroke="#A6192E" stroke-width="2"/>
+  <text x="477" y="80" text-anchor="middle" font-size="21" font-weight="700" fill="#A6192E">Active catalyst</text>
+  <text x="477" y="108" text-anchor="middle" font-size="15" fill="#1A1B1E">surface oxygen vacancies</text>
+  <text x="477" y="132" text-anchor="middle" font-size="15" fill="#1A1B1E">Mo<tspan font-size="11" dy="-7">5+</tspan><tspan dy="7"> sites bind the oxygenate</tspan></text>
+
+  <!-- HDO cycle -->
+  <path d="M614 78 C 660 60, 690 60, 716 70" fill="none" stroke="#2B2D31" stroke-width="2" marker-end="url(#ah)"/>
+  <path d="M716 126 C 690 136, 660 136, 614 120" fill="none" stroke="#2B2D31" stroke-width="2" marker-end="url(#ah)"/>
+  <rect x="718" y="40" width="212" height="116" rx="6" fill="#FFFFFF" stroke="#9A9EA6" stroke-width="1.5"/>
+  <text x="824" y="74" text-anchor="middle" font-size="18" font-weight="700" fill="#1A1B1E">HDO cycle</text>
+  <text x="824" y="100" text-anchor="middle" font-size="14" fill="#44474D">C–O bond breaks;</text>
+  <text x="824" y="120" text-anchor="middle" font-size="14" fill="#44474D">aromatic or olefin + H<tspan font-size="10" dy="4">2</tspan><tspan dy="-4">O</tspan></text>
+  <text x="824" y="140" text-anchor="middle" font-size="14" fill="#44474D">H<tspan font-size="10" dy="4">2</tspan><tspan dy="-4"> re-opens the vacancy</tspan></text>
+
+  <!-- time on stream arrows -->
+  <text x="477" y="196" text-anchor="middle" font-size="14" font-weight="700" fill="#A6192E" letter-spacing="1.5">OVER TIME ON STREAM</text>
+  <line x1="420" y1="158" x2="210" y2="262" stroke="#A6192E" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ar)"/>
+  <line x1="477" y1="206" x2="477" y2="262" stroke="#A6192E" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ar)"/>
+  <line x1="534" y1="158" x2="744" y2="262" stroke="#A6192E" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ar)"/>
+
+  <!-- deactivation routes -->
+  <rect x="90" y="266" width="240" height="92" rx="6" fill="#FFFFFF" stroke="#A6192E" stroke-width="1.5"/>
+  <text x="210" y="298" text-anchor="middle" font-size="17" font-weight="700" fill="#1A1B1E">Over-reduction</text>
+  <text x="210" y="322" text-anchor="middle" font-size="14" fill="#44474D">to MoO<tspan font-size="10" dy="4">2</tspan><tspan dy="-4">, inactive Mo</tspan><tspan font-size="10" dy="-7">4+</tspan></text>
+  <text x="210" y="342" text-anchor="middle" font-size="14" fill="#44474D">vacancies lost</text>
+
+  <rect x="357" y="266" width="240" height="92" rx="6" fill="#FFFFFF" stroke="#A6192E" stroke-width="1.5"/>
+  <text x="477" y="298" text-anchor="middle" font-size="17" font-weight="700" fill="#1A1B1E">Carbon uptake</text>
+  <text x="477" y="322" text-anchor="middle" font-size="14" fill="#44474D">MoO<tspan font-size="10" dy="4">x</tspan><tspan dy="-4">C</tspan><tspan font-size="10" dy="4">y</tspan><tspan dy="-4">H</tspan><tspan font-size="10" dy="4">z</tspan><tspan dy="-4"> oxycarbohydride</tspan></text>
+  <text x="477" y="342" text-anchor="middle" font-size="14" fill="#44474D">phase in the lattice</text>
+
+  <rect x="624" y="266" width="240" height="92" rx="6" fill="#FFFFFF" stroke="#A6192E" stroke-width="1.5"/>
+  <text x="744" y="298" text-anchor="middle" font-size="17" font-weight="700" fill="#1A1B1E">Coke</text>
+  <text x="744" y="322" text-anchor="middle" font-size="14" fill="#44474D">carbon on the surface</text>
+  <text x="744" y="342" text-anchor="middle" font-size="14" fill="#44474D">blocks active sites</text>
+
+  <!-- regeneration -->
+  <path d="M477 360 L477 410 L 40 410 L 40 150" fill="none" stroke="#2F6B4F" stroke-width="2.2" marker-end="url(#ag)"/>
+  <line x1="210" y1="360" x2="210" y2="410" stroke="#2F6B4F" stroke-width="2.2"/>
+  <line x1="744" y1="360" x2="744" y2="410" stroke="#2F6B4F" stroke-width="2.2"/>
+  <line x1="744" y1="410" x2="477" y2="410" stroke="#2F6B4F" stroke-width="2.2"/>
+  <rect x="270" y="420" width="420" height="34" rx="4" fill="#EAF3EE"/>
+  <text x="480" y="443" text-anchor="middle" font-size="15" font-weight="700" fill="#2F6B4F">Regenerate: calcine in air, then re-reduce</text>
+</svg>

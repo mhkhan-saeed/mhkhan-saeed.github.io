@@ -1,0 +1,76 @@
+# ---------------------------------------------------------------
+# NEWS & HIGHLIGHTS. Newest items show first automatically.
+#
+# To add news, copy this block to the top of the list and edit it:
+#
+# - date: 2027-01            # YYYY-MM (or just YYYY)
+#   type: Award              # Award, Talk, Poster, Paper, Milestone, Event, or your own word
+#   title: Short headline
+#   text: One or two sentences. You can use **bold** and [links](https://example.com).
+#   link: https://example.com   # optional
+#
+# To remove an item, delete its lines.
+# ---------------------------------------------------------------
+
+- date: 2026-11
+  type: Poster
+  title: Meet the Industry Candidates, AIChE Annual Meeting 2026
+  text: Presenting my Ph.D. work on mixed-feed kinetics, catalyst lifetime and bio-based BTX to industry recruiters in the AIChE candidate poster session.
+
+- date: 2026
+  type: Award
+  title: CBE Perfect Pitch Award, second place
+  text: Placed second in Iowa State's Department of Chemical and Biological Engineering three-minute thesis-style competition, pitching sustainable chemicals through catalytic lignin upgrading.
+
+- date: 2025-12
+  type: Paper
+  title: Review on adsorbents for pharmaceutical wastewater, RSC Advances
+  text: Co-authored an open-access review of adsorbent-based treatment of pharmaceutical wastewater and routes toward more sustainable processes.
+  link: https://doi.org/10.1039/d5ra06445g
+
+- date: 2025-08
+  type: Paper
+  title: First-author paper published in ACS Catalysis
+  text: Our kinetic study of competitive hydrodeoxygenation in mixed lignin-derived feeds over bulk MoO<sub>3</sub> is out, and free to read.
+  link: https://doi.org/10.1021/acscatal.5c04264
+
+- date: 2025
+  type: Poster
+  title: Poster at the 29th North American Catalysis Society Meeting
+  text: Presented our work on MoO<sub>3</sub> deactivation during ambient-pressure hydrogenation of lignin-derived model compounds.
+
+- date: 2025
+  type: Poster
+  title: Poster at the Great Plains Catalysis Society Symposium
+  text: Shared our progress on understanding MoO<sub>3</sub> deactivation during hydrodeoxygenation.
+
+- date: 2025
+  type: Milestone
+  title: Master of Engineering, Chemical Engineering
+  text: Completed my M.Eng. at Iowa State University on the way to the Ph.D.
+
+- date: 2025-02
+  type: Paper
+  title: Sabatier descriptors paper accepted in ACS Catalysis
+  text: Co-authored work showing how the oxide support steers activity and selectivity of molybdenum oxide catalysts.
+  link: https://doi.org/10.1021/acscatal.4c07504
+
+- date: 2024
+  type: Talk
+  title: Oral presentation at the AIChE Annual Meeting
+  text: Presented our kinetic analysis of competitive hydrodeoxygenation of lignin-derived molecules over bulk MoO<sub>3</sub>.
+
+- date: 2024
+  type: Talk
+  title: Oral presentation at the Great Plains Catalysis Society Symposium
+
+- date: 2023
+  type: Paper
+  title: First-author review in the Journal of Environmental Management
+  text: Published a comprehensive review of coconut-based porous materials for wastewater treatment and CO<sub>2</sub> capture.
+  link: https://doi.org/10.1016/j.jenvman.2023.117825
+
+- date: 2022
+  type: Award
+  title: George W. Parrott Centennial Graduate Fellowship
+  text: Awarded to one of 80 applicants on the strength of undergraduate record and research experience. Also received the CBE Excellence Fellowship.

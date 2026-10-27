@@ -1,0 +1,9 @@
+---
+layout: layouts/base.njk
+permalink: index.html
+title: Mahmudul Hasan Khan
+---
+{#- The home page is built from the sections listed in src/_data/home.yml. -#}
+{%- for s in home.sections %}
+{% include "sections/" + s + ".njk" %}
+{%- endfor %}

@@ -1,0 +1,13 @@
+<section class="contact" aria-labelledby="home-contact">
+  <div class="wrap contact-inner">
+    <div>
+      <h2 id="home-contact">Let’s talk</h2>
+      <p>If your team works on catalysts that behave in the lab and misbehave in the plant, I would enjoy that conversation.</p>
+    </div>
+    <dl class="contact-list">
+      <div><dt>Email</dt><dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd></div>
+      {%- if site.phone %}<div><dt>Phone</dt><dd><a href="tel:{{ site.phone | replace('-', '') }}">{{ site.phone }}</a></dd></div>{% endif %}
+      {%- for l in site.links %}<div><dt>{{ l.label }}</dt><dd><a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.url | replace('https://', '') | replace('www.', '') | truncate(44, true, '…') }}</a></dd></div>{% endfor %}
+    </dl>
+  </div>
+</section>

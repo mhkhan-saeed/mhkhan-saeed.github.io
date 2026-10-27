@@ -1,0 +1,62 @@
+---
+layout: layouts/base.njk
+section: research.html
+---
+{%- set list = collections.projects %}
+{%- set idx = -1 %}
+{%- for p in list %}{% if p.url == page.url %}{% set idx = loop.index0 %}{% endif %}{% endfor %}
+<article class="wrap project">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="research.html">Research</a> <span aria-hidden="true">/</span> <span>{{ short_title or title }}</span></nav>
+
+  <header class="project-head">
+    <p class="eyebrow">
+      <span class="status status-{{ status_kind or 'progress' }}">{{ status }}</span>
+      {%- if role %}<span class="eyebrow-sep">{{ role }}</span>{% endif %}
+    </p>
+    <h1>{{ title | safe }}</h1>
+    {%- if reaction %}<p class="reaction" aria-label="Reaction: {{ reaction | striptags }}">{{ reaction | safe }}</p>{% endif %}
+    {%- if lead %}<p class="lead">{{ lead | md | safe }}</p>{% endif %}
+  </header>
+
+  {%- if image %}
+  <figure class="plate plate-hero">
+    <img src="{{ image }}" alt="{{ image_alt }}" loading="eager">
+    {%- if image_caption or image_credit %}
+    <figcaption>{{ image_caption | md | safe }}{% if image_credit %} <span class="credit">{{ image_credit | md | safe }}</span>{% endif %}</figcaption>
+    {%- endif %}
+  </figure>
+  {%- endif %}
+
+  <div class="project-grid">
+    <div class="prose project-body">
+      {{ content | safe }}
+    </div>
+    <aside class="project-aside" aria-label="Project details">
+      {%- if links %}
+      <div class="aside-block">
+        <h2 class="aside-title">Read more</h2>
+        <ul class="aside-links">
+          {%- for l in links %}<li><a href="{{ l.url }}"{% if l.url.startsWith('http') %} target="_blank" rel="noopener"{% endif %}>{{ l.label | safe }}</a>{% if l.note %}<span>{{ l.note }}</span>{% endif %}</li>{% endfor %}
+        </ul>
+      </div>
+      {%- endif %}
+      {%- if skills %}
+      <div class="aside-block">
+        <h2 class="aside-title">Skills I used</h2>
+        <ul class="chips">{% for s in skills %}<li>{{ s | safe }}</li>{% endfor %}</ul>
+      </div>
+      {%- endif %}
+      {%- if collaborators %}
+      <div class="aside-block">
+        <h2 class="aside-title">With</h2>
+        <p class="aside-text">{{ collaborators }}</p>
+      </div>
+      {%- endif %}
+    </aside>
+  </div>
+
+  <nav class="pager" aria-label="More projects">
+    {%- if idx > 0 %}{% set prev = list[idx - 1] %}<a class="pager-prev" href="{{ prev.data.permalink }}"><span class="pager-label">Previous project</span><span class="pager-title">{{ prev.data.short_title or prev.data.title | safe }}</span></a>{% else %}<span></span>{% endif %}
+    {%- if idx >= 0 and idx < list.length - 1 %}{% set nxt = list[idx + 1] %}<a class="pager-next" href="{{ nxt.data.permalink }}"><span class="pager-label">Next project</span><span class="pager-title">{{ nxt.data.short_title or nxt.data.title | safe }}</span></a>{% endif %}
+  </nav>
+</article>
