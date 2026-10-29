@@ -40,15 +40,16 @@ description: Molybdenum oxide catalysts for converting lignin- and fermentation-
     <ul class="project-list">
       {%- for p in collections.projects %}
       <li class="project-card">
-        <a href="{{ p.data.permalink }}">
+        {%- if p.data.card_link %}<a class="card-box" href="{{ p.data.card_link }}" target="_blank" rel="noopener">{% else %}<div class="card-box">{% endif %}
           {%- if p.data.thumb or p.data.image %}<span class="project-thumb"><img src="{{ p.data.thumb or p.data.image }}" alt="" loading="lazy"></span>{% endif %}
           <span class="project-card-body">
             <span class="status status-{{ p.data.status_kind or 'progress' }}">{{ p.data.status }}</span>
             <span class="card-title">{{ p.data.title | safe }}</span>
             {%- if p.data.reaction %}<span class="reaction reaction-sm">{{ p.data.reaction | safe }}</span>{% endif %}
             <span class="card-text">{{ p.data.summary | safe }}</span>
+            {%- if p.data.card_link %}<span class="card-cue">{{ p.data.card_link_label or "Read the paper" }} <span aria-hidden="true">↗</span></span>{% endif %}
           </span>
-        </a>
+        {%- if p.data.card_link %}</a>{% else %}</div>{% endif %}
       </li>
       {%- endfor %}
     </ul>

@@ -6,6 +6,7 @@ status: Manuscript in preparation
 status_kind: progress
 role: Lead researcher
 reaction: MoO<sub>3</sub> <span class="arrow">→</span> MoO<sub>3−x</sub> (active) <span class="arrow">→</span> MoO<sub>2</sub> · MoO<sub>x</sub>C<sub>y</sub>H<sub>z</sub> · coke
+# card_link: add a link here (e.g. the DOI once published) to make this project card clickable.
 summary: Catalyst lifetime sets the economics of any process. I pair long-run deactivation kinetics with surface and bulk characterization to find what kills MoO<sub>3</sub> activity, and test pretreatments to stop it.
 lead: Molybdenum oxide is a promising catalyst for turning lignin into unsaturated hydrocarbons, but it slowly loses activity on stream. Before it can be used industrially, we need to know why, and whether a smarter catalyst or pretreatment can prevent it.
 image: assets/img/figures/moo3-deactivation-concept.svg

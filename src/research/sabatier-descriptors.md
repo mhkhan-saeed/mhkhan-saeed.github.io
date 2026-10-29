@@ -6,6 +6,9 @@ status: Published · ACS Catalysis 2025
 status_kind: published
 role: Co-author · synthesis, characterization, data interpretation
 reaction: C<sub>3</sub>–C<sub>5</sub> ketones and aldehydes <span class="arrow">→</span> alkenes, not alkanes
+# card_link: where the project card goes when clicked. Delete both card_link lines to make the card not clickable.
+card_link: https://doi.org/10.1021/acscatal.4c07504
+card_link_label: Read in ACS Catalysis
 summary: Which property of the oxide support decides whether a MoO<sub>x</sub> catalyst makes valuable alkenes or over-saturated alkanes? I synthesized and characterized the catalyst library behind the answer.
 lead: Molybdenum oxide deoxygenates lignin-derived aromatics well, but it tends to over-saturate the small aliphatic byproducts into alkanes. This project asked whether choosing the right support can steer that selectivity.
 image: assets/img/figures/sabatier-graphical-abstract.png

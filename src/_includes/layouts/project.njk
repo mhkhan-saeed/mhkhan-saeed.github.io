@@ -56,7 +56,7 @@ section: research.html
   </div>
 
   <nav class="pager" aria-label="More projects">
-    {%- if idx > 0 %}{% set prev = list[idx - 1] %}<a class="pager-prev" href="{{ prev.data.permalink }}"><span class="pager-label">Previous project</span><span class="pager-title">{{ prev.data.short_title or prev.data.title | safe }}</span></a>{% else %}<span></span>{% endif %}
-    {%- if idx >= 0 and idx < list.length - 1 %}{% set nxt = list[idx + 1] %}<a class="pager-next" href="{{ nxt.data.permalink }}"><span class="pager-label">Next project</span><span class="pager-title">{{ nxt.data.short_title or nxt.data.title | safe }}</span></a>{% endif %}
+    {%- if idx > 0 %}{% set prev = list[idx - 1] %}<a class="pager-prev" href="research-{{ prev.page.fileSlug }}.html"><span class="pager-label">Previous project</span><span class="pager-title">{{ prev.data.short_title or prev.data.title | safe }}</span></a>{% else %}<span></span>{% endif %}
+    {%- if idx >= 0 and idx < list.length - 1 %}{% set nxt = list[idx + 1] %}<a class="pager-next" href="research-{{ nxt.page.fileSlug }}.html"><span class="pager-label">Next project</span><span class="pager-title">{{ nxt.data.short_title or nxt.data.title | safe }}</span></a>{% endif %}
   </nav>
 </article>

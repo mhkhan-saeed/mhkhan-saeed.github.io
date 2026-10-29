@@ -8,12 +8,13 @@
     <ul class="cards">
       {%- for p in collections.projects %}{% if not p.data.home_hidden %}
       <li class="card">
-        <a href="{{ p.data.permalink }}">
+        {%- if p.data.card_link %}<a class="card-box" href="{{ p.data.card_link }}" target="_blank" rel="noopener">{% else %}<div class="card-box">{% endif %}
           <span class="status status-{{ p.data.status_kind or 'progress' }}">{{ p.data.status }}</span>
           <span class="card-title">{{ p.data.short_title or p.data.title | safe }}</span>
           {%- if p.data.reaction %}<span class="reaction reaction-sm">{{ p.data.reaction | safe }}</span>{% endif %}
           <span class="card-text">{{ p.data.summary | safe }}</span>
-        </a>
+          {%- if p.data.card_link %}<span class="card-cue">{{ p.data.card_link_label or "Read the paper" }} <span aria-hidden="true">↗</span></span>{% endif %}
+        {%- if p.data.card_link %}</a>{% else %}</div>{% endif %}
       </li>
       {%- endif %}{% endfor %}
     </ul>

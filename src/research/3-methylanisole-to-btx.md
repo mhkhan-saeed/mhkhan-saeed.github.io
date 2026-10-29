@@ -6,6 +6,7 @@ status: Manuscript in preparation
 status_kind: progress
 role: Lead researcher
 reaction: 3-methylanisole <span class="arrow">→</span> toluene · xylenes · benzene
+# card_link: add a link here (e.g. the DOI once published) to make this project card clickable.
 summary: Some yeast strains used in bioethanol plants make 3-methylanisole from sugar. I am developing an ambient-pressure route that converts it over MoO<sub>3</sub> into BTX aromatics, and sketched how it could plug into existing plants.
 lead: Benzene, toluene and xylenes (BTX) are among the most important building blocks in the chemical industry, and they come almost entirely from petroleum. This project explores a bio-based route that bioethanol plants could add to their existing process.
 image: assets/img/figures/3ma-to-btx-process.png

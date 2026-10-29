@@ -10,6 +10,9 @@ status: Published · ACS Catalysis 2025
 status_kind: published
 role: First author
 reaction: acetone + anisole <span class="arrow">→</span> propene · propane · benzene
+# card_link: where the project card goes when clicked. Delete both card_link lines to make the card not clickable.
+card_link: https://doi.org/10.1021/acscatal.5c04264
+card_link_label: Read in ACS Catalysis
 summary: Real feeds are mixtures. I measured how lignin-derived oxygenates compete for the same active sites on MoO<sub>3</sub>, and built a kinetic way to rank how strongly each one binds.
 lead: Most hydrodeoxygenation kinetics are measured one compound at a time, but lignin vapor contains dozens of oxygenates at once. This project asks what happens inside the reactor when they compete.
 image: assets/img/figures/competitive-hdo-graphical-abstract.png

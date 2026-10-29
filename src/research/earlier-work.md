@@ -5,6 +5,9 @@ short_title: Earlier research at BUET
 status: Earlier research · BUET, 2019–2021
 status_kind: earlier
 reaction: coconut husk <span class="arrow">→</span> activated carbon adsorbent
+# card_link: where the project card goes when clicked. Delete both card_link lines to make the card not clickable.
+card_link: https://doi.org/10.1016/j.jenvman.2023.117825
+card_link_label: Read the review
 summary: Before catalysis I worked on biomass-derived adsorbents for wastewater treatment and on water-quality monitoring of transboundary rivers in Bangladesh.
 lead: My first research projects were in environmental engineering at the Bangladesh University of Engineering and Technology (BUET). They taught me sample discipline, analytical chemistry and how research feeds policy.
 home_hidden: true
