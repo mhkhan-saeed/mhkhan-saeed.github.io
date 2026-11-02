@@ -3,19 +3,29 @@
 #
 # To add news, copy this block to the top of the list and edit it:
 #
-# - date: 2027-01            # YYYY-MM (or just YYYY)
+# - date: 2027-01            # YYYY-MM-DD, YYYY-MM, or just YYYY
 #   type: Award              # Award, Talk, Poster, Paper, Milestone, Event, or your own word
 #   title: Short headline
 #   text: One or two sentences. You can use **bold** and [links](https://example.com).
-#   link: https://example.com   # optional
+#   link: https://example.com   # optional: makes the headline clickable
+#   link_label: View the abstract   # optional: adds a visible link under the text
 #
 # To remove an item, delete its lines.
 # ---------------------------------------------------------------
 
-- date: 2026-11
+- date: 2026-11-12
+  type: Talk
+  title: "Oral presentation at the AIChE Annual Meeting 2026: Investigation of the Complex Phenomenon of Molybdenum Oxide (MoO<sub>3</sub>) Catalyst Deactivation during Hydrodeoxygenation"
+  text: "Talk 702d · Thursday, November 12, 2026, 2:40–3:00 PM · Room 101H (Level 1), Minneapolis Convention Center."
+  link: https://studio.m-anage.com/aiche/2026/meetingapp.cgi/Paper/731732
+  link_label: View the abstract
+
+- date: 2026-11-10
   type: Poster
-  title: Meet the Industry Candidates, AIChE Annual Meeting 2026
-  text: Presenting my Ph.D. work on mixed-feed kinetics, catalyst lifetime and bio-based BTX to industry recruiters in the AIChE candidate poster session.
+  title: "Poster at the AIChE Annual Meeting 2026: Meet the Industry Candidates"
+  text: "Session 391, Meet the Industry Candidates Poster Session: Catalysis and Reaction Engineering · Tuesday, November 10, 2026, 1:00–3:00 PM · Exhibit Hall B (Level 1), Minneapolis Convention Center. Presenting my Ph.D. work on mixed-feed kinetics, catalyst lifetime and bio-based BTX to industry recruiters."
+  link: https://studio.m-anage.com/aiche/2026/meetingapp.cgi/Paper/741729
+  link_label: View the abstract
 
 - date: 2026
   type: Award

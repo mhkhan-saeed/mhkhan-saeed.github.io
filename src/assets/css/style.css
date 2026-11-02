@@ -200,6 +200,8 @@ a.card-box:hover { border-color: var(--accent); }
 .news-title a { color: var(--ink); }
 .news-title a:hover { color: var(--accent); }
 .news-body p { color: var(--ink-2); font-size: 0.97rem; }
+.news-body .news-link { font-weight: 600; font-size: 0.93rem; margin-top: 2px; }
+.news-body .news-link a { color: var(--accent); }
 @media (max-width: 600px) { .news-item { grid-template-columns: 1fr; } .news-meta { flex-direction: row; gap: 12px; align-items: baseline; } }
 
 /* ---------- publications ---------- */

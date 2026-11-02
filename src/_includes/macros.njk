@@ -13,6 +13,7 @@
   <div class="news-body">
     <h3 class="news-title">{% if n.link %}<a href="{{ n.link }}" target="_blank" rel="noopener">{{ n.title | safe }}</a>{% else %}{{ n.title | safe }}{% endif %}</h3>
     {%- if n.text %}<p>{{ n.text | md | safe }}</p>{% endif %}
+    {%- if n.link and n.link_label %}<p class="news-link"><a href="{{ n.link }}" target="_blank" rel="noopener">{{ n.link_label }} <span aria-hidden="true">↗</span></a></p>{% endif %}
   </div>
 </li>
 {%- endmacro %}
