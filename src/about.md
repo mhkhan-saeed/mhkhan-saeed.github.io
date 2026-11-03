@@ -38,4 +38,4 @@ I have taught the undergraduate unit-operations laboratory (mass transfer and st
 
 ## What I am looking for
 
-{{ site.seeking }} I am especially interested in catalysis, refining and biorefining, specialty chemicals, and materials roles where kinetics and characterization drive decisions. You can reach me at [{{ site.email }}](mailto:{{ site.email }}).
+{{ site.seeking }} Seeking full-time roles in R&D, process development, and process engineering from mid-2027. I’m especially interested in positions where surface chemistry, reaction kinetics, and materials characterization drive decisions, whether in catalysis and chemicals, refining and biorefining, or semiconductor manufacturing processes such as thin-film deposition, etch, and surface treatment. You can reach me at [{{ site.email }}](mailto:{{ site.email }}).
